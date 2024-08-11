@@ -1,0 +1,9 @@
+SD-WAN（Software Defined-Wide Area Network）とは
+
+物理的な機器で構築したWAN上にソフトウェアを用いて仮想的なWANを構築・管理する技術のこと。
+
+
+SDN（Software Defined Networking）とは
+ソフトウェアを用いてネットワークを制御する技術の総称。
+
+c:\Users\牛島淳史\OneDrive\デスクトップ\スクリーンショット 2024-08-11 102355.jpg
