@@ -5,5 +5,3 @@ SD-WAN（Software Defined-Wide Area Network）とは
 
 SDN（Software Defined Networking）とは
 ソフトウェアを用いてネットワークを制御する技術の総称。
-
-c:\Users\牛島淳史\OneDrive\デスクトップ\スクリーンショット 2024-08-11 102355.jpg
