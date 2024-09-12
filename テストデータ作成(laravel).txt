@@ -1,0 +1,40 @@
+
+●テストデータを入れる
+laravelではデータ投入をシーダーという仕組みで自動化できる仕組みがあります。
+入れ方は、以下のバリエーションがある。
+・シーダーだけでロジックを組んでデータを投入する。
+・シーダー＋Fakerでデータを作成してデータを投入する。
+・seeder+FakerにFactoryをつけて、データを投入する。
+なんで最後だけ全部英語かって？気にするな。
+
+seederがデータを登録する大元、Fakerが登録するデータを生成するところ、Factoryはseederから呼び出されてテスト項目を作成する処理、というイメージになります。
+
+
+●Factoryを作る
+テストデータの作成はシーダーの中に直接データ作成ロジックを書くこともできるが、今回はファクトリークラスを作成してファクトリークラスでテストデータを作成するようにします。
+ファクトリークラスも例によってartisanコマンドで作成します。
+
+php artisan make:Factory [クラス名 Model]
+
+php artisan make:Factory NotificationData
+
+php artisan make:Factory NotificationSendGroup
+
+
+
+●seederを作る
+
+$php artisan make:seeder [ファイル名]
+
+php artisan make:seeder NotificationDataTableSeeder.php
+
+php artisan make:seeder NotificationSendGroupTableSeeder.php
+
+
+
+●シーだー実行
+php artisan make:seeder NotificationDataTableSeeder
+
+
+一部だけ実行
+php artisan db:seed --class=NotificationDataTableSeeder
