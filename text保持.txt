@@ -1,0 +1,16 @@
+                {{$tako}}
+                @foreach ($info_lists as $info_list)
+                <tr>
+                    <th scope="row">{{$info_list->notification_id}}</th>
+                    <!-- <th scope="row">{$info_list->notification_id}</th> -->
+                    <td>{{$info_list->distribution_date}}</td>
+                    <td>共通</td>
+                    <td>xxxxxx</td>
+                    <td><button type="button" class="btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                        data-whatever="id{{$info_list->notification_id}}">編集</button>
+                    </td>
+                    <td><button type="button" class="btn-gray-mini" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                        data-whatever="id{{$info_list->notification_id}}">削除</button>
+                    </td>
+                </tr>
+                @endforeach
